@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Logo from '../assets/dimension-drafts-logo.png'
 const Navbar = () => {
 
   const [color, setColor] = useState(false)
@@ -19,11 +20,12 @@ const Navbar = () => {
         <nav className='py-3'>
           <div className='flex justify-center px-5 md:px-10 basis-auto'>
             <div className="logo text-center flex justify-center lg:ml-auto lg:translate-x-36">
-              <h1 className='text-white font-bold text-center text-xl'>
+              <img src={Logo} alt="logo" width={300} />
+              {/* <h1 className='text-white font-bold text-center text-xl'>
                 <span style={{ color: 'rgb(210,163,246)', fontSize: '2rem', fontWeight: 'lighter' }}>{'{'}</span>
                 DIMENSION DRAFTS
                 <span style={{ color: 'rgb(210,163,246)', fontSize: '2rem', fontWeight: 'lighter' }}>{'}'}</span>
-              </h1>
+              </h1> */}
             </div>
             <div className='lg:flex hidden ml-auto' >
               <ul className='flex flex-wrap justify-center content-center cursor-pointer'>

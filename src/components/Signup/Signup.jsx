@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../../assets/dimension-drafts-logo.png'
 import './Signup.css'
 
 function Signup() {
@@ -9,11 +10,12 @@ function Signup() {
             <div className="lowerLayer"></div>
             <div class="relative z-10 w-full max-w-xl signupForm">
                 <div className="header">
-                    <h1 className='text-white font-bold text-center text-xl'>
+                    <img src={Logo} alt="logo" width={300} />
+                    {/* <h1 className='text-white font-bold text-center text-xl'>
                         <span style={{ color: 'rgb(210,163,246)', fontSize: '2rem', fontWeight: 'lighter' }}>{'{'}</span>
                         DIMENSION DRAFTS
                         <span style={{ color: 'rgb(210,163,246)', fontSize: '2rem', fontWeight: 'lighter' }}>{'}'}</span>
-                    </h1>
+                    </h1> */}
                     <p>Developers</p>
                 </div>
                 <div className="main-content">
