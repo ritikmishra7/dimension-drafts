@@ -1,0 +1,29 @@
+.homePageWrapper {
+    background-image: url('../assets/bg.jpg');
+    background-position-x: center;
+    background-attachment: fixed;
+}
+
+.bg-footer {
+    background-image: linear-gradient(270deg,
+            rgb(214, 169, 249) 4%,
+            rgb(156, 86, 210) 26%,
+            rgb(126, 86, 210) 95%);
+}
+
+.bg-navbar {
+    background-color: black;
+    transition: .2s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bg-card {
+    background: linear-gradient(rgba(30, 27, 37, 0.67), rgb(0, 0, 0));
+}
+
+.bg-btn {
+    background: linear-gradient(90deg,
+            rgb(162, 56, 230),
+            rgb(222, 57, 117),
+            rgb(234, 135, 125));
+}
