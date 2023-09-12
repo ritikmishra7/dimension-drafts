@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import Logo from '../assets/dimension-drafts-logo.png'
+import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
 
   const [color, setColor] = useState(false)
+  const navigate = useNavigate()
   const changeColor = () => {
     if (window.scrollY >= 10) {
       setColor(true)
@@ -28,7 +30,7 @@ const Navbar = () => {
               </h1> */}
             </div>
             <div className='lg:flex hidden ml-auto' >
-              <ul className='flex flex-wrap justify-center content-center cursor-pointer'>
+              <ul className='flex flex-wrap justify-center content-center cursor-pointer' onClick={() => navigate('/signup')}>
                 <li className='text-[#FFFFFFCC] text-lg'>Login</li>
               </ul>
               <div className='w-40 flex gap-5  justify-center content-center mx-8'>

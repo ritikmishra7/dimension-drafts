@@ -8,14 +8,9 @@ function Signup() {
             <div className='outerLayer'></div>
             <div className="middleLayer"></div>
             <div className="lowerLayer"></div>
-            <div class="relative z-10 w-full max-w-xl signupForm">
+            <div className="relative z-10 signupForm">
                 <div className="header">
                     <img src={Logo} alt="logo" width={300} />
-                    {/* <h1 className='text-white font-bold text-center text-xl'>
-                        <span style={{ color: 'rgb(210,163,246)', fontSize: '2rem', fontWeight: 'lighter' }}>{'{'}</span>
-                        DIMENSION DRAFTS
-                        <span style={{ color: 'rgb(210,163,246)', fontSize: '2rem', fontWeight: 'lighter' }}>{'}'}</span>
-                    </h1> */}
                     <p>Developers</p>
                 </div>
                 <div className="main-content">
@@ -40,8 +35,10 @@ function Signup() {
                             <input type="text" name="confirmPass" id="confirmPass"
                                 placeholder='Confirm Your Password' />
                         </div>
-                        <button type='button' className='signup-btn'>Sign up</button>
-                        <button type='button' className='already-btn'>Already have an account? Sign in.</button>
+                        <div className="signup-btns">
+                            <button type='button' className='signup-btn'>Sign up</button>
+                            <button type='button' className='already-btn'>Already have an account? Sign in.</button>
+                        </div>
                     </form>
                 </div>
             </div>

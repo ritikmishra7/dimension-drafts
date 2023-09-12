@@ -10,6 +10,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
     z-index: 999;
     inset: 0;
     background-color: rgba(0, 0, 0);
@@ -45,10 +46,19 @@
 }
 
 .signupForm {
-    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-top: 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 16px;
     background-color: black;
+    width: 30%;
+    max-width: 36rem;
+    min-width: 450px;
+}
+
+.signup-btns {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -57,7 +67,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
 }
 
 .header p {
@@ -65,18 +75,24 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 1.2rem;
-    margin-left: 20px;
+    font-size: 1.1rem;
+    margin-left: 10px;
     /* Make the text color transparent */
+}
+
+.header img {
+    width: 55%;
+    margin-left: 20px;
 }
 
 
 
 .main-content {
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(24, 24, 24);
     color: rgb(236, 232, 238);
     border-end-start-radius: 16px;
     border-end-end-radius: 16px;
+    padding-left: 8px;
 }
 
 .main-content input {
@@ -86,15 +102,16 @@
 }
 
 .main-content h1 {
-    font-size: 1.875rem;
+    font-size: 1.6rem;
     line-height: 2.25rem;
-    padding: 5px;
+    padding: 5px 10px 5px 5px;
+    font-weight: 700;
 }
 
 .input-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .main-content form {
@@ -103,6 +120,7 @@
     justify-content: center;
     padding: 20px;
     gap: 15px;
+    width: 95%;
 }
 
 .input-container label {
@@ -110,7 +128,7 @@
 }
 
 .signup-btn {
-    background-image: linear-gradient(to right, rgb(172, 56, 210), rgb(232, 121, 124));
+    background-image: linear-gradient(to right, rgb(172, 56, 210) 0%, rgb(222, 57, 117) 60%, rgb(232, 121, 124));
     padding: 10px 10px;
     border-radius: 10px;
     margin-top: 10px;
@@ -127,7 +145,7 @@
 }
 
 .already-btn:hover {
-    background-image: linear-gradient(to bottom, black 0%, black 80%, rgb(45, 45, 45) 100%);
+    background-image: linear-gradient(to bottom, black 0%, black 40%, rgba(183, 183, 183, 0.09) 100%);
 }
 
 .already-btn {
@@ -137,4 +155,6 @@
     font-weight: 600;
     padding: 10px 10px;
     border: 1px solid grey;
+    color: rgb(120, 118, 120);
+    background-color: rgb(24, 24, 24);
 }
